@@ -1,9 +1,15 @@
 #!/bin/bash
 
 set -eo pipefail
-
 echo " -----> Upgrading Python packaging tools."
 pip install -U pip setuptools wheel
+
+echo " -----> Current working directory:"
+pwd
+echo " -----> Making wheelhouse"
+mkdir wheelhouse
+
+pip download -d wheelhouse tensorflow
 
 REQUIREMENTS_FILE="${REQUIREMENTS_FILE:-/tmp/src/requirements.txt}"
 

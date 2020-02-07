@@ -24,4 +24,7 @@ else
     echo " -----> Skipping requirements file: $REQUIREMENTS_FILE"
 fi
 
+echo " -----> Cache /opt/app-root/cache content:"
+ls -l --block-size=M /opt/app-root/cache
+
 echo " -----> Done."

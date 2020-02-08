@@ -1,6 +1,11 @@
 #!/bin/bash
 
 set -eo pipefail
+
+shopt -s dotglob
+echo " -----> Installing application source ..."
+mv /tmp/src/* "$HOME"
+
 echo " -----> Upgrading Python packaging tools."
 pip install -U pip setuptools wheel
 

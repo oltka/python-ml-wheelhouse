@@ -4,6 +4,6 @@ import time
 
 # infinite loop
 while true:
-  print "Hello World"
+  print ("Hello World")
   time.sleep(60)
   

@@ -3,7 +3,7 @@ import sys
 import time
 
 # infinite loop
-while true:
+while True:
   print ("Hello World")
   time.sleep(60)
   

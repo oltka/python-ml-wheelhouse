@@ -21,7 +21,6 @@ if [ -f "$REQUIREMENTS_FILE" ]; then
     echo " ------------------------------------------------------------------"
     cat $REQUIREMENTS_FILE
     echo " ------------------------------------------------------------------"
-    
     echo " -----> Processing requirements file: $REQUIREMENTS_FILE"
     pip download -d /opt/app-root/cache -r $REQUIREMENTS_FILE
 else

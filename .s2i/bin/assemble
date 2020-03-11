@@ -41,7 +41,7 @@ ls -l --block-size=M /opt/app-root/cache
 
 echo " -----> Apply 'rm', keep tensorflow..."
 cd /opt/app-root/cache
-rm -v !(/opt/app-root/cache/tensorflow-*.whl)
+rm -v !(tensorflow-*.whl)
 
 echo " -----> Cache /opt/app-root/cache content:"
 ls -l --block-size=M /opt/app-root/cache

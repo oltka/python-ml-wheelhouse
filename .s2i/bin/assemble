@@ -39,11 +39,11 @@ fi
 echo " -----> Cache /opt/app-root/cache content:"
 ls -l --block-size=M /opt/app-root/cache
 
-echo " -----> Apply 'rm', keep tensorflow..."
-cd /opt/app-root/cache
-rm -v !(tensorflow-*.whl)
+#echo " -----> Apply 'rm', keep tensorflow..."
+#cd /opt/app-root/cache
+#rm -v !(tensorflow-*.whl)
 
-echo " -----> Cache /opt/app-root/cache content:"
-ls -l --block-size=M /opt/app-root/cache
+#echo " -----> Cache /opt/app-root/cache content:"
+#ls -l --block-size=M /opt/app-root/cache
 
 echo " -----> Done."
